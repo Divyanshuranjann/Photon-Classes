@@ -1,0 +1,399 @@
+:root {
+  --blue: #0f4cbd;
+  --blue-dark: #0b3690;
+  --orange: #ff8a00;
+  --orange-dark: #e87700;
+  --white: #ffffff;
+  --text: #1c2430;
+  --muted: #5d6b7a;
+  --bg-soft: #f4f8ff;
+  --shadow: 0 10px 30px rgba(15, 76, 189, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--white);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.logo span {
+  color: var(--orange);
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.nav a:hover {
+  color: var(--blue);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hero {
+  background: linear-gradient(120deg, #eaf2ff, #fff4e7);
+  padding: 80px 0;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.chip {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #ffe9cf;
+  color: #8a4b00;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.2;
+}
+
+.subheading {
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
+  color: var(--muted);
+  margin: 0 auto 1.4rem;
+  max-width: 740px;
+}
+
+.hero-cta,
+.query-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--blue-dark);
+}
+
+.btn-secondary {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background: var(--orange-dark);
+}
+
+.btn-outline {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.alt-bg {
+  background: var(--bg-soft);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.cards-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card,
+.feature-item,
+.testimonial {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.feature-item {
+  font-weight: 600;
+}
+
+.notice-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.notice-list li {
+  background: var(--white);
+  border-left: 4px solid var(--orange);
+  padding: 14px 16px;
+  border-radius: 8px;
+}
+
+.notice-list span {
+  font-weight: 700;
+}
+
+.admission-form {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  max-width: 640px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  padding: 12px;
+  font: inherit;
+}
+
+.full-btn {
+  width: 100%;
+}
+
+.form-note {
+  margin: 10px 0 0;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 14px 0 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  background: var(--white);
+  border: 1px solid #dce5f4;
+  color: var(--blue);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+}
+
+.map-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.map-wrap iframe {
+  width: 100%;
+  min-height: 300px;
+  border: 0;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 14px;
+  bottom: 86px;
+  z-index: 1000;
+  background: #25d366;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 16px;
+  border-radius: 999px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-call-btn {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  background: var(--blue);
+  font-weight: 700;
+  padding: 14px;
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1200;
+  padding: 16px;
+}
+
+.popup-overlay.active {
+  display: flex;
+}
+
+.popup-box {
+  background: var(--white);
+  border-radius: 16px;
+  width: min(500px, 100%);
+  padding: 22px;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.popup-close {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  border: 0;
+  background: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.popup-btn {
+  margin-top: 10px;
+}
+
+@media (max-width: 920px) {
+  .cards-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 4%;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 10px;
+    min-width: 220px;
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .cards-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .mobile-call-btn {
+    display: block;
+  }
+
+  .floating-whatsapp {
+    bottom: 62px;
+  }
+}
