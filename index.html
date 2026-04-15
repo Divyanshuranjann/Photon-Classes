@@ -11,10 +11,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="topbar">
+    <div class="container topbar-wrap">
+      <p>Admissions Open 2026 for Class 11th &amp; 12th</p>
+      <a href="tel:9470861585">+91 9470861585</a>
+    </div>
+  </div>
   <header class="header">
     <div class="container nav-wrap">
       <a href="#home" class="logo">Photon <span>Classes</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navMenu">☰</button>
       <nav class="nav" id="navMenu">
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
@@ -28,14 +34,25 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="container hero-content">
-        <p class="chip">Admission Open 2026 for Class 11th &amp; 12th</p>
-        <h1>No.1 Science Coaching in Ashiana, Patna</h1>
-        <p class="subheading">Class 9-12 | Expert Teachers | Weekly Tests | Limited Seats</p>
-        <div class="hero-cta">
-          <a href="tel:9470861585" class="btn btn-primary">Call Now</a>
-          <a href="#admission" class="btn btn-secondary">Join Now</a>
-          <a href="#courses" class="btn btn-outline">Join Online Course</a>
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="chip">Admission Open 2026 for Class 11th &amp; 12th</p>
+          <h1>No.1 Science Coaching in Ashiana, Patna</h1>
+          <p class="subheading">Class 9-12 | Expert Teachers | Weekly Tests | Limited Seats</p>
+          <div class="hero-cta">
+            <a href="tel:9470861585" class="btn btn-primary">Call Now</a>
+            <a href="#admission" class="btn btn-secondary">Join Now</a>
+            <a href="#courses" class="btn btn-outline">Join Online Course</a>
+          </div>
+        </div>
+        <aside class="hero-highlight">
+          <h3>Why Photon Classes?</h3>
+          <ul>
+            <li>Experienced faculty for Science and Maths</li>
+            <li>Structured tests and progress tracking</li>
+            <li>Limited seats for personal mentoring</li>
+          </ul>
+          <a href="#admission" class="btn btn-primary full-btn">Get 30% Off Admission</a>
         </div>
       </div>
     </section>
@@ -122,6 +139,7 @@
           <button type="submit" class="btn btn-primary full-btn">Submit Enquiry</button>
           <p class="form-note" id="formNote" aria-live="polite"></p>
         </form>
+        
       </div>
     </section>
 
@@ -202,6 +220,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
